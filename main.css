@@ -1,0 +1,46 @@
+.section-tab{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 10px 36px 0px, rgb(0 0 0 / 6%) 0px 0px 0px 1px;
+    padding: 10px;
+}
+.tab-control{
+    text-decoration: none;
+    border: none;
+    list-style-type: none;
+    background-color: white;
+}
+.tab-control button{
+    background-color:transparent;
+    border:none;
+}
+.tab-control.active{
+    border-bottom: none;
+    background-color: rgba(127, 200, 255, 0.4);
+    color: blue;
+    border-radius: 4px;
+
+    position: relative;
+}
+.tab-control.active::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    left: -30px;
+    top: 0;
+    height: 100%;
+    bottom: 0;
+    width: 4px;
+    background-color: blue;
+    border-radius: 0px 50px 50px 0px;
+    
+}
+
+
+#tab-control{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    
+}
+
